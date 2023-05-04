@@ -8,6 +8,7 @@ const blogSchema = new Schema(
         apellido:{type:String},
         correo:{type:String},
         contraseña:{type:String}
+        
     },
     {collection:'estudiantes'}
 )
