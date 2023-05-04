@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import '../App'
 import './styles/css.css';
 import logoLogin from './assets/img/logo.png';
 import axios from "axios";
 import Swal from 'sweetalert2'
 import 'bootstrap/dist/css/bootstrap.css'
+import { Link } from "react-router-dom";
+import CompShow from "../admin/Show";
 
 
 axios.defaults.URI='http://localhost:8000'
@@ -60,6 +63,7 @@ export default function Login(){
                             <input type="submit" className="fadeIn fourth" value="Acceder" />
                         </form>
                         <div id="formFooter">
+                            {<Link to={'/'.CompShow}><a className="underlineHover">Eres Administrador?</a></Link>}
                             <a className="underlineHover" href="#">Forgot Password?</a>
                         </div>
                     </div>

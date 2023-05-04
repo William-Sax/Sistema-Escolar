@@ -1,7 +1,8 @@
 import express from 'express';
 import {actualizarRegistro, crearRegistro, eliminarRegistro, registros} from '../controllers/BlogControllers.js'
 
-const router = express.Router()
+const router = express.Router();
+
 
 router.get('/',registros)
 router.post('/',crearRegistro)
